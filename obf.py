@@ -40,6 +40,7 @@ def obfuscate(code, alphabet, sets_num, min_name_length):
 
     return new
 
+# Here you could also add some symbols like @ ? ! . ,
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
 
 f = open("file.bat", "r")
