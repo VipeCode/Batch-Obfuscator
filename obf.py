@@ -1,17 +1,17 @@
 import random
 import numpy as np
 
-def obfuscate(code, sets_num):
+def obfuscate(code, alphabet, sets_num, min_name_length):
     Il = ["I", "l"]
-    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     mixed_alphabet = ''.join(random.sample(alphabet, len(alphabet)))
 
     alphabets = []
     sets = []
     for x in range(sets_num):
-        name = ''.join(random.choices(Il, k=5))
+        name = ''.join(random.choices(Il, k=min_name_length))
         while name in sets:
-            name = ''.join(random.choices(Il, k=5))
+            min_name_length += 1
+            name = ''.join(random.choices(Il, k=min_name_length))
         sets.append(name)
 
     for l in np.array_split(list(mixed_alphabet), sets_num):
@@ -40,5 +40,7 @@ def obfuscate(code, sets_num):
 
     return new
 
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
 f = open("file.bat", "r")
-print(obfuscate(f.read(), 8))
+print(obfuscate(f.read(), alphabet, 8, 5))
