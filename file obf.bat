@@ -1,8 +1,16 @@
 @echo off
-Set _var=iZrFQs3gMatpkyALWfG6YRKT1DVNUhw2cmuOX0CIoBejPJS497lHz5bEx8dnqv
+Set IlIlI=aPBf0JHh
+Set lIllI=WQ9w7s6D
+Set IlllI=brYjmGRt
+Set IIlIl=eLvgyTil
+Set lIIll=1ZNuFSK4
+Set llIII=c3pXVC2x
+Set IIlII=kMqAEdU
+Set lIIIl=Ozo85nI
 cls
-@%_var:~38+4,1%%_var:~28+4,1%%_var:~25+4,1%%_var:~36+4,1% %_var:~36+4,1%%_var:~13+4,1%%_var:~13+4,1%
 
-%_var:~38+4,1%%_var:~28+4,1%%_var:~25+4,1%%_var:~36+4,1% %_var:~47+4,1%%_var:~38+4,1%%_var:~46+4,1%%_var:~46+4,1%%_var:~36+4,1% %_var:~12+4,1%%_var:~36+4,1%%_var:~-2+4,1%%_var:~46+4,1%%_var:~54+4,1%!
+@%IIlIl:~0,1%%llIII:~0,1%%IlIlI:~7,1%%lIIIl:~2,1% %lIIIl:~2,1%%IlIlI:~3,1%%IlIlI:~3,1%
 
-%_var:~7+4,1%%_var:~5+4,1%%_var:~30+4,1%%_var:~1+4,1%%_var:~38+4,1%
+%IIlIl:~0,1%%llIII:~0,1%%IlIlI:~7,1%%lIIIl:~2,1% %IlIlI:~6,1%%IIlIl:~0,1%%IIlIl:~7,1%%IIlIl:~7,1%%lIIIl:~2,1% %lIllI:~0,1%%lIIIl:~2,1%%IlllI:~1,1%%IIlIl:~7,1%%IIlII:~5,1%!
+
+%llIII:~2,1%%IlIlI:~0,1%%lIIll:~3,1%%lIllI:~5,1%%IIlIl:~0,1%
